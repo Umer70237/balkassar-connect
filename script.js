@@ -216,7 +216,7 @@ const workers = [
     category: "carpenter",
     type: "ووڈ ورک (لکڑی کا کام)",
     subtype: "کارپینٹر",
-    location:"  سر( نزد گورنمنٹ ہائی اسکول)",
+    location:"  سر( نزد گورنمنٹ ہائی سکول)",
   },
 
   //Rickshaw
