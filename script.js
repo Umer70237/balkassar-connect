@@ -1,69 +1,313 @@
 // Sample data - Replace with your actual workers
-      const workers = [
-        {
-          name: "Ahmed Khan",
-          phone: "+923001234567",
-          category: "plumber",
-          location: "صوفی بیکرز کے قریب ایم سی بی بینک",
-        },
-        {
-          name: "Hassan Ali",
-          phone: "+923007654321",
-          category: "plumber",
-          location: "مین بازار چوک کے پاس",
-        },
-        {
-          name: "Bilal Sheikh",
-          phone: "+923009876543",
-          category: "electrician",
-          location: "سکول روڈ کے قریب",
-        },
-        {
-          name: "Farhan Malik",
-          phone: "+923005551234",
-          category: "electrician",
-          location: "مسجد کے سامنے",
-        },
-        {
-          name: "Kashif Iqbal",
-          phone: "+923008887777",
-          category: "carpenter",
-          location: "بس سٹاپ کے پاس",
-        },
-        {
-          name: "Nadeem Abbas",
-          phone: "+923006669999",
-          category: "carpenter",
-          location: "پوسٹ آفس کے قریب",
-        },
-        {
-          name: "Wasim Akram",
-          phone: "+923004445555",
-          category: "mechanic",
-          location: "پٹرول پمپ کے سامنے",
-        },
-        {
-          name: "Imran Butt",
-          phone: "+923002223333",
-          category: "mechanic",
-          location: "ہسپتال روڈ",
-        },
-        {
-          name: "Salman Raza",
-          phone: "+923001112222",
-          category: "driver",
-          location: "بازار میں",
-        },
-      ];
+const workers = [
+ //tent service
+  {
+    name: "Rao Sohail",
+    phone: "+923348718337",
+    category: "tent-service",
+    type: "راجپوت ٹینٹ سروس اینڈ پکوان سینٹر",
+    subtype: "راجپوت ٹینٹ سروس اینڈ پکوان سینٹر",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
 
-      // Urdu category names
-      const categoryNamesUrdu = {
-        plumber: "پلمبر",
-        electrician: "الیکٹریشن",
-        carpenter: "کارپینٹر(لکڑی کا کام)",
-        mechanic: "موٹر وائنڈنگ / آلات کی مرمت",
-        driver: "driver"
-      };
+
+    //drivers
+  {
+    name: "Rana Tabi",
+    phone: "+923105543782",
+    category: "driver",
+    type: "ڈرائیور (کار) ",    
+    subtype: "کار",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
+
+  {
+    name: "Rana Tajammal",
+    phone: "+923199705655",
+    category: "driver",
+    type: "ڈرائیور (کار) ",    
+    subtype: "کار",
+    location:"بلکسر گاؤں",
+  },
+
+
+  //plumber
+
+
+
+  {
+    name: "Rana Aamir",
+    phone: "+923100961379",
+    category: "plumber",
+    type: "پلمبر",
+    subtype: "پلمبر",
+    location:"لاری اڈہ / پرانا اڈہ",
+
+  },
+
+   {
+    name: "Nauman Ali",
+    phone: "+923104819572",
+    category: "plumber",
+    type: "الیکٹریشن + پلمبر",
+    subtype: " پلمبر",
+    location:"بلکسر",
+  },
+  {
+    name: "Mudassir one",
+    phone: "+923135890243",
+    category: "plumber",
+    type: "الیکٹریشن + پلمبر",
+    subtype: " پلمبر",
+    location:"بلکسر",
+  },
+  {
+    name: "Mudassir two",
+    phone: "+923171597203",
+    category: "plumber",
+    type: "الیکٹریشن + پلمبر",
+    subtype: " پلمبر",
+    location:"بلکسر",
+  },
+
+  {
+    name: "Hameed",
+    phone: "+923115441380",
+    category: "plumber",
+    type: "الیکٹریشن + پلمبر",
+    subtype: " پلمبر",
+    location:"بلکسر",
+  },
+
+   //Painter
+
+  {
+    name: "Sajawal Abbas",
+    phone: "+923149412302",
+    category: "painter",
+    type: "پینٹر (رنگ کرنے والا)",
+    subtype: "پینٹر",
+    location:"بلکسر",
+  },
+
+
+  //electrician
+  {
+    name: "Rao Habib",
+    phone: "+923075678201",
+    category: "electrician",
+    type: "الیکٹریشن",
+    subtype: "الیکٹریشن",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
+
+  {
+    name: "Rana Irfan",
+    phone: "+923076489850",
+    category: "electrician",
+    type: "الیکٹریشن",
+    subtype: "الیکٹریشن",
+    location:"بلکسر چوک",
+  },
+  {
+    name: "Kashif Abbas",
+    phone: "+923125621430",
+    category: "electrician",
+    type: "الیکٹریشن",
+    subtype: "الیکٹریشن",
+    location:"بلکسر چوک",
+  },
+
+  {
+    name: "Nauman Ali",
+    phone: "+923104819572",
+    category: "electrician",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن",
+    location:"بلکسر",
+  },
+  {
+    name: "Mudassir one",
+    phone: "+923135890243",
+    category: "electrician",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن",
+    location:"بلکسر",
+  },
+  {
+    name: "Mudassir two",
+    phone: "+923171597203",
+    category: "electrician",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن",
+    location:"بلکسر",
+  },
+
+  {
+    name: "Hameed",
+    phone: "+923115441380",
+    category: "electrician",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن",
+    location:"بلکسر",
+  },
+
+
+
+  //Multi-service
+  {
+    name: "Nauman Ali",
+    phone: "+923104819572",
+    category: "multi-service",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن + پلمبر",
+     location:"بلکسر",
+  },
+
+  {
+    name: "Muhammad Hanzalah",
+    phone: "+923161559231",
+    category: "multi-service",
+    type: " موٹر وائنڈنگ / آلات کی مرمت/ریپئر AC",
+    subtype:" موٹر وائنڈنگ / آلات کی مرمت/ریپئر AC",
+    location:"وی ٹی آئی والی گلی",
+     location:"وی ٹی آئی والی گلی",
+    
+  },
+  {
+    name: "Mudassir one",
+    phone: "+923135890243",
+    category: "multi-service",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن + پلمبر",
+     location:"بلکسر",
+  },
+  {
+    name: "Mudassir two",
+    phone: "+923171597203",
+    category: "multi-service",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن + پلمبر",
+     location:"بلکسر",
+  },
+
+  {
+    name: "Hameed",
+    phone: "+923115441380",
+    category: "multi-service",
+    type: "الیکٹریشن + پلمبر",
+    subtype: "الیکٹریشن + پلمبر",
+     location:"بلکسر",
+  },
+  
+  //carpenter
+  {
+    name: "Rana Kamran",
+    phone: "+923165637395",
+    category: "carpenter",
+    type: "ووڈ ورک (لکڑی کا کام)",
+    subtype: "کارپینٹر",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
+
+   {
+    name: "Zain Ali",
+    phone: "+923135417258",
+    category: "carpenter",
+    type: "ووڈ ورک (لکڑی کا کام)",
+    subtype: "کارپینٹر",
+    location:"  سر( نزد گورنمنٹ ہائی اسکول)",
+  },
+
+  //Rickshaw
+  {
+    name: "Rana Nadeem",
+    phone: "+923137402514",
+    category: "rickshaw-service",
+    type: "رکشہ (سواری )",
+    subtype: "سواری ",
+    location:"بلکسر چوک",
+  },
+  {
+    name: "Rashid Mehmood",
+    phone: "+923146433359",
+    category: "rickshaw-service",
+    type:"رکشہ (سواری )",
+    subtype: "سواری ",
+    location:"بلکسر چوک",
+    
+  },
+ {
+    name: "Farooq",
+    phone: "+923105528481",
+    category: "rickshaw-service",
+    type: "رکشہ (سواری و لوڈر)",
+    subtype: "سواری و لوڈر",
+    location:"بلکسر چوک",
+  },
+
+  {
+    name: "Mazahir Ali",
+    phone: "+923125017890",
+    category: "rickshaw-service",
+    type: "رکشہ ( لوڈر)",
+    subtype: " لوڈر",
+    location:"بلکسر چوک",
+  },
+
+  //mechanic motor winding
+  {
+    name: "Safeer Abbas",
+    phone: "+923125727278",
+    category: "mechanic",
+    type: "موٹر وائنڈنگ / آلات کی مرمت",
+    subtype: "موٹر وائنڈنگ / آلات کی مرمت",
+    location:"بلکسر چوک",
+  },
+  {
+    name: "Ehsan Ul Haq",
+    phone: "+923068585390",
+    category: "mechanic",
+    type: "موٹر وائنڈنگ / آلات کی مرمت",
+    subtype: "موٹر وائنڈنگ / آلات کی مرمت",
+     location:"وی ٹی آئی والی گلی",
+  },
+
+  {
+    name: "Muhammad Hanzalah",
+    phone: "+923161559231",
+    category: "mechanic",
+    type: " موٹر وائنڈنگ / آلات کی مرمت/ریپئر AC",
+    subtype: "ریپئر AC /موٹر وائنڈنگ / آلات کی مرمت",
+     location:"وی ٹی آئی والی گلی",
+  },
+
+  
+
+  
+  //mobile repair
+  {
+    name: "Shayan Mobile",
+    phone: "+923164725407",
+    category: "mobile-repair",
+    type: "موبائل ریپئرنگ",
+    subtype: "موبائل ریپئرنگ",
+    location:"بلکسر چوک",
+  },
+  {
+    name: "Khurram Shehzad",
+    phone: "+923115637521",
+    category: "mobile-repair",
+    type: "موبائل ریپئرنگ",
+    subtype: "موبائل ریپئرنگ",
+    location:"بلکسر چوک",
+  },
+
+ 
+
+];
+
+      
 
       const categoryButtons = document.querySelectorAll(".category-btn");
       const workersList = document.getElementById("workers-list");
@@ -71,12 +315,18 @@
       const scrollTopBtn = document.getElementById("scrollTopBtn");
 
       function renderWorkers(category) {
-        const filtered =
-          category === "all"
+        const filtered = category === "all"
             ? workers
             : workers.filter((w) => w.category === category);
 
-        if (filtered.length === 0) {
+        const workersToRender = category === "all"
+          ? filtered.filter((worker, index, array) => {
+              const key = `${worker.name}|${worker.phone}`;
+              return array.findIndex((item) => `${item.name}|${item.phone}` === key) === index;
+            })
+          : filtered;
+
+        if (workersToRender.length === 0) {
           workersList.innerHTML = `
                     <div class="empty-state">
                         <div class="empty-state-icon">📭</div>
@@ -86,17 +336,18 @@
           return;
         }
 
-        // Show category badge when viewing "all"
-        const showCategory = category === "all";
-
-        workersList.innerHTML = filtered
+        workersList.innerHTML = workersToRender
           .map(
-            (worker) => `
+            (worker) => {
+              const showBadge = category === "all" || category === "rickshaw-service" || category === "driver" || category === "multi-service" || category === "tent-service";
+              const badgeText = category === "all" ? worker.type : worker.subtype;
+              
+              return `
                 <div class="worker-card">
                     <div class="worker-info">
                         <div class="worker-name">
                             <span>${worker.name}</span>
-                            ${showCategory ? `<span class="category-badge">${categoryNamesUrdu[worker.category]}</span>` : ""}
+                           ${showBadge ? `<span class="category-badge">${badgeText}</span>` : ""}
                         </div>
                         <div class="worker-location">${worker.location}</div>
                     </div>
@@ -116,7 +367,8 @@
                         </a>
                     </div>
                 </div>
-            `,
+            `;
+            }
           )
           .join("");
       }
@@ -129,12 +381,18 @@
 
         // Update section title
         const titles = {
-          all: "تمام سروسز",
+          all: "تمام خدمات",
           plumber: "پلمبر",
           electrician: "الیکٹریشن",
-          carpenter: "کارپینٹر (لکڑی کا کام)",
+          carpenter: "ووڈ ورک (لکڑی کا کام)",
           mechanic: "موٹر وائنڈنگ / آلات کی مرمت",
-          driver: "دیگر خدمات",
+          driver: "ڈرائیور / گاڑی کی بکنگ",
+          "tent-service": "ٹینٹ سروس",
+          "rickshaw-service": "رکشہ سروس (سواری و لوڈر)",
+          "mobile-repair": "موبائل ریپئرنگ",
+          "multi-service": "ایک سے زائد کام کرنے والے",
+          painter: "پینٹر (رنگ کرنے والا)",
+
         };
         sectionTitle.textContent = titles[category];
 
@@ -148,6 +406,7 @@
             block: "start",
           });
         }, 100);
+         
       }
 
       // Event listeners for category buttons
@@ -157,22 +416,47 @@
         });
       });
 
-      // Scroll to top button functionality
-      scrollTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
 
-      // Show/hide scroll to top button based on scroll position
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-          scrollTopBtn.classList.add("visible");
-        } else {
-          scrollTopBtn.classList.remove("visible");
-        }
-      });
 
-      // Initial render
-      renderWorkers("all");
+     // Track which category button was clicked
+let lastClickedButton = null;
+
+// Event listeners for category buttons
+categoryButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    lastClickedButton = btn; // Remember which button was clicked
+    updateCategory(btn.dataset.category);
+  });
+});
+
+// Scroll arrow - go back to the category button that was clicked
+scrollTopBtn.addEventListener("click", () => {
+  if (lastClickedButton) {
+    // Scroll to the specific button that was clicked
+    lastClickedButton.scrollIntoView({
+      behavior: "smooth",
+      block: "center", // Makes sure button is centered/fully visible
+    });
+  } else {
+    // If no button was clicked (shouldn't happen), go to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+});
+
+// Show/hide scroll button based on scroll position
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("visible");
+  } else {
+    scrollTopBtn.classList.remove("visible");
+  }
+});
+     // Initial render
+renderWorkers("all");
+
+window.addEventListener('load', () => {
+  document.body.classList.add('loaded');
+});
