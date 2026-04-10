@@ -495,11 +495,29 @@ const workers = [
 
    {
     name: "MC Lab Services",
-    phone: "+923340580512",
+    phone: "+923345296314",
     category: "medical",
-    type: "میڈیکل",
-    subtype: "میڈیکل سروسز",
+    type: "لیب سروسز",
+    subtype: "لیب سروسز",
     location:"یو بی ایل بینک کے قریب",
+  },
+
+  {
+    name: "MKB Pharmacy",
+    phone: "+923173692655",
+    category: "medical",
+    type: "میڈیکل سروسز",
+    subtype: "میڈیکل سروسز",
+    location:"بلکسر چوک",
+  },
+
+  {
+    name: "Rana Abubakar",
+    phone: "+923135434162",
+    category: "medical",
+    type: "ہوم میڈیکل سروسز (انجیکشن، پٹی، ڈرپ وغیرہ)",
+    subtype: "ہوم میڈیکل سروسز (انجیکشن، پٹی، ڈرپ وغیرہ)",
+    location:"بلکسر ",
   },
 
   //milk shops
@@ -522,7 +540,82 @@ const workers = [
     location:"بکھاری کلاں (ٹالی والا اڈہ)",
   },
 
+  //مستری
+
+  {
+    name: "Rana Waseem Raza ",
+    phone: "+923195336904",
+    category: "labour",
+    type: "مستری",
+    subtype: "مستری",
+    location:"بلکسر",
+  },
   
+  {
+    name: "Mudassir Alvi ",
+    phone: "+923155706244",
+    category: "labour",
+    type: "مستری",
+    subtype: "مستری",
+    location:"بلکسر",
+  },
+
+  {
+    name: "Rizwan Haider",
+    phone: "+923123086572",
+    category: "Auto-repair",
+    type: "آٹو الیکٹریشن اینڈ بیٹری سروس",
+    subtype: "آٹو الیکٹریشن اینڈ بیٹری سروس",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
+  
+  {
+    name: "Shakeel Ikram ",
+    phone: "+923105736638",
+    category: "Auto-repair",
+    type: "آٹو ڈیکوریشن",
+    subtype: "آٹو ڈیکوریشن",
+    location:"نزد ریڈو کمپلیکس",
+  },
+
+   {
+    name: "Shahbaz Ali",
+    phone: "+923145584582",
+    category: "Auto-repair",
+    type: "آٹو پارٹس میکینک",
+    subtype: "آٹو پارٹس میکینک",
+    location:"بلکسر",
+  },
+
+  //دیگر خدمات
+
+{
+    name: "Rana Adeel",
+    phone: "+923026266960",
+    category: "other-services",
+    type: "جیولری شاپ",
+    subtype: "جیولری شاپ",
+    location:"بلکسر گاؤں",
+  },
+
+  {
+    name: "Kamran Sajid",
+    phone: "+923145387233",
+    category: "other-services",
+    type: "بی۔کے سیلنگ اینڈ ڈیکوریڑر",
+    subtype: "بی۔کے سیلنگ اینڈ ڈیکوریڑر",
+    location:"علی مارکیٹ بلکسر",
+  },
+
+   {
+    name: "Amir Altaf",
+    phone: "+923145668633",
+    category: "other-services",
+    type: "پلائی ووڈ اینڈ سریا اسٹور",
+    subtype: "پلائی ووڈ اینڈ سریا اسٹور",
+    location:"لاری اڈہ / پرانا اڈہ",
+  },
+
 
 
   
@@ -549,23 +642,25 @@ const whatsappGroups = [
     link: "https://chat.whatsapp.com/1RegLpRnT4GHyEjrcVUCYp?mode=gi_t"
   },
 
+   {
+    groupName: "Bhagwal Media House",
+    adminName: "Jaleel Naqvi",
+    description: "آپ کی آواز، آپ کی خبر — مکمل رازداری کے ساتھ — ہر خبر پر نظر",
+    category: "whatsapp-group",
+    link: "https://chat.whatsapp.com/CMweZPxZ9cFGekgS9gVoQg"
+  },
+
   {
     groupName: "Ch Iftakhar Al Fasal",
     adminName:"Ch Iftakhar",
-    description: "Trade test center Rawalpindi Chandni chowkk Iran Road",
+    description: "Trade Test Center Rawalpindi Chandni Chowk Iran Road",
     category: "whatsapp-group",
     link: "https://whatsapp.com/channel/0029Vb7Ig1nISTkSpgqaTl1D"
   },
 
   
 
-  {
-    groupName: "Bhagwal Media House",
-    adminName: "Jaleel Naqvi",
-    description: "آپ کی آواز، آپ کی خبر — مکمل رازداری کے ساتھ — ہر خبر پر نظر",
-    category: "whatsapp-group",
-    link: "https://chat.whatsapp.com/CMweZPxZ9cFGekgS9gVoQg"
-  }
+ 
 ];
 
       
@@ -581,7 +676,7 @@ const whatsappGroups = [
     : workers.filter((w) => w.category === category);
 
   const workersHTML = filteredWorkers.map((worker) => {
-    const showSubtype = (worker.category === "driver" || worker.category === "tent-service" || worker.category === "multi-service" || worker.category === "shops" || worker.category === "food-delivery" || worker.category === "rickshaw-service") && worker.subtype;
+    const showSubtype = (worker.category === "driver" || worker.category === "tent-service" || worker.category === "multi-service" || worker.category === "shops" || worker.category === "food-delivery" || worker.category === "rickshaw-service " || worker.category === "medical" || worker.category === "other-services" || worker.category === "Auto-repair") && worker.subtype;
 
 const badge = category === "all"
   ? `<span class="category-badge">${worker.type}</span>`
@@ -666,12 +761,14 @@ function renderGroups() {
           "mobile-repair": "موبائل ریپئرنگ",
           "multi-service": "ایک سے زائد کام کرنے والے",
           painter: "پینٹر (رنگ کرنے والا)",
-          "whatsapp-group": "واٹس ایپ گروپس",
+          "whatsapp-group": "بلکسر کے نامور واٹس ایپ گروپس",
           shops: "دکانیں، اسٹورز اور بچت مال",
-          medical: "میڈیکل سروسز",
+          medical: "میڈیکل سروسز/لیب سروسز",
           milk: "مِلک شاپ/دودھ والے",
-          "food-delivery":"ریسٹورنٹ (فوڈ ڈیلیوری)"
-          
+          "food-delivery":"ریسٹورنٹ (فوڈ ڈیلیوری)",
+           "other-services": "دیگر خدمات",
+          "Auto-repair": "آٹو مکینک (گاڑیاں و بائیک)",
+          labour: "مستری",        
 
         };
         sectionTitle.textContent = titles[category];
@@ -728,7 +825,7 @@ scrollTopBtn.addEventListener("click", () => {
 
 // Show/hide scroll button based on scroll position
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 900) {
+  if (window.scrollY > 1100) {
     scrollTopBtn.classList.add("visible");
   } else {
     scrollTopBtn.classList.remove("visible");
